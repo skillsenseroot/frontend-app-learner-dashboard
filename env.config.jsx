@@ -27,19 +27,19 @@ const config = {
           op: PLUGIN_OPERATIONS.Hide,
           widgetId: 'default_contents',
         },
-        {
-          // Insert a custom footer
-          op: PLUGIN_OPERATIONS.Insert,
-          widget: {
-            id: 'custom_footer',
-            type: DIRECT_PLUGIN,
-            RenderWidget: () => (
-              <h1 style={{textAlign: 'center'}}>
-                <image src={logoskillsense} />
-              </h1>
-            ),
-          },
-        },
+        // {
+        //   // Insert a custom footer
+        //   op: PLUGIN_OPERATIONS.Insert,
+        //   widget: {
+        //     id: 'custom_footer',
+        //     type: DIRECT_PLUGIN,
+        //     RenderWidget: () => (
+        //       <h1 style={{textAlign: 'center'}}>
+        //         <image src={logoskillsense} />
+        //       </h1>
+        //     ),
+        //   },
+        // },
       ]
     }
   },
