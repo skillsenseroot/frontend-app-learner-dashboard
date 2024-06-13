@@ -17,7 +17,7 @@ frontend-platform's getConfig loads configuration in the following sequence:
 - runtime config
 */
 import { DIRECT_PLUGIN, PLUGIN_OPERATIONS } from '@openedx/frontend-plugin-framework';
-
+import logoskillsense from 'assets/logo.png';
 const config = {
   pluginSlots: {
     footer_slot: {
@@ -34,7 +34,9 @@ const config = {
             id: 'custom_footer',
             type: DIRECT_PLUGIN,
             RenderWidget: () => (
-              <h1 style={{textAlign: 'center'}}>🦶</h1>
+              <h1 style={{textAlign: 'center'}}>
+                <image src={logoskillsense} />
+              </h1>
             ),
           },
         },
