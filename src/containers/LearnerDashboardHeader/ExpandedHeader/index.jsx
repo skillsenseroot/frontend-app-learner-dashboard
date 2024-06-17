@@ -64,6 +64,14 @@ export const ExpandedHeader = () => {
         >
           {formatMessage(messages.help)}
         </Button>
+        <Button
+          as="a"
+          href={getConfig().SUPPORT_URL}
+          variant="inverse-primary"
+          className="p-4"
+        >
+          {formatMessage(messages.help)}
+        </Button>
       </div>
 
       <AuthenticatedUserDropdown />
